@@ -112,7 +112,7 @@ public class LinkedList {
 		myList.printLinkedList();
 
 		// reverse the LinkedList using iteration
-		myList.head = myList.iterativeReverse(myList.head);
+		myList.iterativeReverse();
 		// call print method again to see reversed list
 		System.out.println("\n");
 		System.out.printf("Reversed Linked List using iteration:\n");
@@ -220,7 +220,7 @@ public class LinkedList {
 	}
 
 	// reversing list using iteration
-	Node iterativeReverse(Node head) {
+	Node iterativeReverse() {
 
 		Node previous = null;
 		Node current = head;
@@ -233,8 +233,6 @@ public class LinkedList {
 			current = next;
 		}
 		head = previous;
-		return head;
-
 	}
 
 	void stackReverse() {
